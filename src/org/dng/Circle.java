@@ -6,9 +6,9 @@ public class Circle extends GeomFigure {
     public Circle(double r) throws Exception {
         if (r <= 0)
             throw new Exception("Circle with such parameters cant exist!");
-
         this.r = r;
     }
+
 
     @Override
     protected double getArea() {

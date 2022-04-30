@@ -11,7 +11,7 @@ public class Parallelogram extends GeomFigure {
     private double b;
     private int angle;
 
-    public Parallelogram(int a, int b, int angle) throws Exception {
+    public Parallelogram(double a, double b, int angle) throws Exception {
         if ((a <= 0) || (b <= 0) || (angle <= 0) )
             throw new Exception("Parallelogram with such parameters cant exist!");
 

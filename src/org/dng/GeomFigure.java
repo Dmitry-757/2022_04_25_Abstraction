@@ -5,6 +5,11 @@ package org.dng;
  */
 
 public abstract class GeomFigure {
+//    protected FigureTypes figureTypes;
     protected abstract double getArea();
     protected abstract double getPerimeter();
+}
+
+enum FigureTypes{
+    TRIANGLE, PARALLELOGRAM, CIRCLE
 }
