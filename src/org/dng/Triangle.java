@@ -29,7 +29,7 @@ public class Triangle extends GeomFigure {
 
     @Override
     protected double getPerimeter() {
-        return a + b + c;
+        return ((double) (a + b + c) * 100) / 100;
     }
 
     @Override

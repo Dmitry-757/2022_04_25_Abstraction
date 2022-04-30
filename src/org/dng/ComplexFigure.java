@@ -7,15 +7,19 @@ public class ComplexFigure {
     private List<GeomFigure> arr = new ArrayList<>() {
     };
 
-    ComplexFigure() {
+    ComplexFigure(){
+    }
+    ComplexFigure(GeomFigure figure) {
         try {
-            Triangle triangle = new Triangle(2, 3, 4);
-            Circle circle = new Circle(1);
-            Parallelogram parallelogram = new Parallelogram(2, 4, 30);
+            arr.add(figure);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
 
-            arr.add(triangle);
-            arr.add(circle);
-            arr.add(parallelogram);
+    public void addFigure(GeomFigure figure){
+        try {
+            arr.add(figure);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -34,7 +38,7 @@ public class ComplexFigure {
         for (GeomFigure f : arr) {
             p += f.getPerimeter();
         }
-        return p;
+        return ( (double) Math.round(p * 100))/100;
     }
 
 }

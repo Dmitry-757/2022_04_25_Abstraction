@@ -1,6 +1,6 @@
 package org.dng;
 
-public class Main {
+public class TestFigures {
 
     public static void main(String[] args) {
         try {
