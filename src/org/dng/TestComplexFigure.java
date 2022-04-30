@@ -24,8 +24,10 @@ public class TestComplexFigure {
         }
 
         ComplexFigure cf = new ComplexFigure(circle);
-        for (GeomFigure gf:gfList) {
-            cf.addFigure(gf);
+        if (gfList != null) {
+            for (GeomFigure gf:gfList) {
+                cf.addFigure(gf);
+            }
         }
         System.out.println("Combined area of all figures are "+cf.getCombinedArea());
         System.out.println("Combined perimeter of all figures are "+cf.getCombinedPerimeter());
