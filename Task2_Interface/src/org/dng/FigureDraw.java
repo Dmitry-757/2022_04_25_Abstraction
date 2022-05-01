@@ -5,9 +5,8 @@ import java.awt.image.BufferedImage;
 
 
 public class FigureDraw {
-//    public static void main(String[] args) {
-//
-//    }
+
+    //** We are not looking for easy ways ;))
     public static void draw(String s) {
         int width = 170;
         int height = 40;
