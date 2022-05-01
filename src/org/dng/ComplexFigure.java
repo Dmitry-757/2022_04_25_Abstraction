@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ComplexFigure {
-    private List<GeomFigure> arr = new ArrayList<>() {
+    private List<GeomFigure> figureList = new ArrayList<>() {
     };
 
     ComplexFigure(){
     }
     ComplexFigure(GeomFigure figure) {
         try {
-            arr.add(figure);
+            figureList.add(figure);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -19,7 +19,7 @@ public class ComplexFigure {
 
     public void addFigure(GeomFigure figure){
         try {
-            arr.add(figure);
+            figureList.add(figure);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -27,7 +27,7 @@ public class ComplexFigure {
 
     public double getCombinedArea() {
         double s = 0;
-        for (GeomFigure f : arr) {
+        for (GeomFigure f : figureList) {
             s += f.getArea();
         }
         return s;
@@ -35,7 +35,7 @@ public class ComplexFigure {
 
     public double getCombinedPerimeter() {
         double p = 0;
-        for (GeomFigure f : arr) {
+        for (GeomFigure f : figureList) {
             p += f.getPerimeter();
         }
         return ( (double) Math.round(p * 100))/100;
