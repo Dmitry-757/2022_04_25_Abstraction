@@ -34,7 +34,7 @@ public class FigureDraw {
         for (int y = 0; y < height; y++) {
             StringBuilder sb = new StringBuilder();
             for (int x = 0; x < width; x++) {
-                sb.append(image.getRGB(x, y) == -16777216 ? " " : "$");//если цвет фона - то пробел, иначе зачек $
+                sb.append(image.getRGB(x, y) == -16777216 ? " " : "+");//если цвет фона - то пробел, иначе зачек $
             }
             if (sb.toString().trim().isEmpty()) {
                 continue;

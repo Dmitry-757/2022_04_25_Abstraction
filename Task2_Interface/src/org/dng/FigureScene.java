@@ -46,9 +46,10 @@ public class FigureScene {
         for(GeomFigure f:figureList){
             if(f instanceof IDrawable){
                 System.out.println();
+                System.out.println("Ladies and gentlemen, on stage there is: "+ f );
                 ((IDrawable)f).draw();
                 System.out.println();
-                System.out.println("*******************************************************************");
+                System.out.println("***********************************************************************************");
                 System.out.println();
             }
             else {
