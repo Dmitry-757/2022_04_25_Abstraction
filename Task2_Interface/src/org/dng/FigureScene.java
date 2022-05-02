@@ -56,7 +56,7 @@ public class FigureScene {
                 System.out.println();
 //                System.out.println("***************************************************************************************");
                 System.out.println();
-                FigureDraw.draw("u p s,  s o r r y");
+                FigureDraw.draw("ups, sorry");
                 System.out.println();
                 System.out.println(f.toString() + " has not implementation of draw interface!");
             }
