@@ -1,7 +1,7 @@
 package org.dng;
 
 public enum FigureType {
-    TRIANGLE(9650), RECTANGLE(9632), CIRCLE(9675);
+    TRIANGLE(9727), RECTANGLE(9632), CIRCLE(9675);
 
     private int asciiCode;
     FigureType(int asciiCode) {

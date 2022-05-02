@@ -29,6 +29,11 @@ public class Triangle  extends GeomFigure implements IDrawable, IPrintable{
     }
 
     @Override
+    public String toStringShort() {
+        return figureType.toString();
+    }
+
+    @Override
     public String toString() {
         return "Triangle{" +
                 "a = " + a +

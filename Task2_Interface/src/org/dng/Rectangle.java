@@ -25,6 +25,11 @@ public class Rectangle extends GeomFigure implements IPrintable, IDrawable{
     }
 
     @Override
+    public String toStringShort() {
+        return figureType.toString();
+    }
+
+    @Override
     public String toString() {
         return "Rectangle{" +
                 "a = " + a +

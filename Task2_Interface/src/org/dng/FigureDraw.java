@@ -13,12 +13,20 @@ public class FigureDraw {
 
         BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
         Graphics g = image.getGraphics();
-        g.setFont(new Font("SansSerif", Font.PLAIN, 24) );
+        //g.setFont(new Font("SansSerif", Font.PLAIN, 24) );
+        g.setFont(new Font(Font.MONOSPACED, Font.PLAIN, 24) );
 //        g.setFont(new Font("TimesRoman", Font.BOLD, 24) );
         Graphics2D graphics = (Graphics2D) g;
         graphics.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+        // ASCII: 0 - 255
+        // Руны: 0x16A0 - 0x16FF
+        // Рамки: 0x2500 - 0x257F
+        // Блоки: 0x2580 - 0x259F
+        // Геометрические фигуры: 0x25A0 - 0x25FF
+
         //char c = (char)9829;//heart
         //char c = (char)9650;//triangle
+        //char c = (char)9651;//triangle
         //char c = (char)9660;//triangle
         //char c = (char)9674;//ромб
         //char c = (char)9675;//circle
